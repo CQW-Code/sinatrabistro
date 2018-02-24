@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: wheat
+}
+
+.menu-container
+{
+    background-color: darkgreen;
+    color: wheat;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu 
+{
+   
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name
+{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.viewmenu,
+.create
+{
+    font-size: 20px;
+    font-family: sans-serif, Tahoma, Arial, Helvetica;
+
+}
+
+.header-container {
+    color: black;
+    background-color: rgb(186, 233, 186);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social, 
+  .subscribe
+  {
+      align-self: flex-end;
+      margin: 20px;
+  }
+
+
+  .menu-grid-container
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .menu-grid
+  {
+      width: 900px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    
+  }
+
+  .menu-grid-item
+  {
+    
+    width: 300px;
+    height: 300px;
+   
+    
+  }
+
+  .menu-1,
+  .menu-3
+  {
+      background-color: forestgreen;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+     
+     
+
+  }
+
+  .menu-2
+  {
+      background-color: darkseagreen;
+      display:flex;
+  }
+
+  .breakfast,
+  .lunch,
+  .dinner
+  {
+      font-size: 24px;
+      font-family: Verdana, Tahoma;
+      text-decoration: underline;
+      text-align: center;
+  }
+
+.bfast-items
+{
+    align-items: center;
+}
+  
+
+  

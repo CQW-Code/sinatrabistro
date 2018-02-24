@@ -1,16 +1,16 @@
 <h3 class="center">Add a new menu item</h3>
 <form method="POST" action="/apps">
   <div class="input-field green-text text-darken-4  ">
-    <input id="item" required name="item" />
+    <input id="title" required name="title" />
     <br />
-    <label class="active green-text text-darken-4" for="item">New item</label>
+    <label class="active green-text text-darken-4" for="title">New item</label>
   </div>
   <div class="input-field green-text text-darken-4">
     <input id="price" required name="price" />
     <br />
     <label class="active green-text text-darken-4" for="price">Price</label>
   </div>
-  <div class="input-field">
+  <div class="input-field green-text text-darken-4">
     <textarea class="materialize-textarea" id="desc" required name="description"></textarea>
    <br />
     <label for="desc" class="active green-text text-darken-4">Description</label>
@@ -18,3 +18,6 @@
   <br />
   <button class="btn right" type="submit">Save</button>
 </form>
+
+<!-- upon clicking SAVE, it goes to a blank page
+but the record IS saved and is viewable-->

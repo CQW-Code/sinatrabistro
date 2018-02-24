@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- build home page
+       Style it- colors and all that jazz
+       flexbox for layout multiple sections!
+       connect to 'home.erb' aka home page
+       of sinatra pages-->
+<head>
+    <link rel='stylesheet' href='main.css' />
+
+    <title>Sinatra Bistro</title>
+</head>
+
+<body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='name'>Sinatra Bistro</div>
+          <div class='links'>
+            <div class='viewmenu'>View menu</div>
+              <div class='create' ahref='./view//new.erb'>New menu item</div>
+                </div>
+              </div>
+            </div>
+
+    <div class='header-container'>
+      <div class='header'>
+        <div class='subscribe'>Subscribe &#9662;</div>
+         <div class='logo'>
+              <img src="public/images/menu.jpg" />
+          </div>
+            <div class='social'>
+              <img src='public/images/social-icons.svg' />
+            </div>
+          </div>
+      </div>
+
+      <div class='menu-grid-container'>
+          <div class= 'menu-grid'>
+              <div class='menu-grid-item menu-1 first-item'>
+                <h4 class='breakfast'>Breakfast Menu</h4>
+                <br />
+                <ul class='bfast-items'>
+                  <li>Scrambled Eggs</li>
+                  <li>Oatmeal</li>
+                  <li>Bagel with Cream Cheese</li>
+                  <li>Denver Omelet</li>
+                  <li>Orange Juice</li>
+                </ul>
+              </div>
+              <div class='menu-grid-item menu-2'>
+                <h4 class='lunch'>Lunch Menu</h4>
+              </div>
+              <div class='menu-grid-item menu-3 last-item'>
+                <h4 class='dinner'>Dinner Menu</h4>
+             </div>
+        </div>
+      </div>
+
+
+
+
+</body>
+
+</html>

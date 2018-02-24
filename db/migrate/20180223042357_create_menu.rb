@@ -1,8 +1,8 @@
-class CreateApps < ActiveRecord::Migration[5.1]
+class Create_App < ActiveRecord::Migration[5.1]
   def self.up
     create_table :apps do |t|
-      t.string :item
-      t.string :price
+      t.string :title
+      t.integer :price
       t.text :description
       t.timestamps
     end
@@ -12,3 +12,4 @@ class CreateApps < ActiveRecord::Migration[5.1]
     drop_table :posts
   end
 end
+

@@ -20,7 +20,7 @@ class Menu < Sinatra::Base
 
       put "/apps/:id" do
         app = App.find(params[:id])
-        app.update(item: params[:item], 
+        app.update(title: params[:title], 
         price: params[:price],
         description: params[:description])
         redirect "/apps"
@@ -32,11 +32,12 @@ class Menu < Sinatra::Base
       end
 
       post "/apps" do
-        App.create
-        (item: params[:item], 
-        price: params[:price], 
-        description: params[:description])
-        redirect "/"
+        App.create(
+          title: params[:title],
+          price: params[:price],
+          description: params[:description]
+        )
+        erb :new #?? blank page
       end
 
       delete "/apps/:id" do

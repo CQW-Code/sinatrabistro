@@ -1,9 +1,9 @@
-<h1 class="center">Edit <%= @app.title %></h1>
+<h2 class="center">Edit <%= @app.title %></h2>
 <form method="POST" action="/apps/<%= @app.id %>">
   <input type="hidden" name="_method" value="PUT">
   <div class="input-field">
-    <input id="item" required name="item" value="<%= @app.title %>" />
-    <label class="active" for="item">Item</label>
+    <input id="title" required name="title" value="<%= @app.title %>" />
+    <label class="active" for="title">Item</label>
   </div>
   <div class="input-field">
     <input id="price" required name="price" value="<%= @app.price %>" />
@@ -17,3 +17,5 @@
   </div>
  <button class="btn right" type="submit">Save</button>
 </form>
+<!-- clicking edit gives me a "doesn't know this
+ditty" error -->
